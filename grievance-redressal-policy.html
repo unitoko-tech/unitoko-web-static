@@ -1,0 +1,533 @@
+<!-- UniToko Grievance Redressal Policy -->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grievance Redressal Policy - UniToko</title>
+  <meta name="description" content="UniToko Grievance Redressal Policy: how to raise complaints, timelines, investigation workflow, remedies, appeals, privacy/IP/security channels, and contact directory." />
+  <link rel="canonical" href="https://www.unitoko.com/grievance" />
+
+  <!-- Tailwind & Alpine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <!-- Fonts + Site CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#250a52" />
+
+  <!-- Social -->
+  <meta property="og:title" content="Grievance Redressal Policy • UniToko" />
+  <meta property="og:description" content="How to file a grievance with UniToko, what to include, timelines, remedies, appeals, and contacts." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.unitoko.com/grievance" />
+  <meta property="og:site_name" content="UniToko" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "UniToko Grievance Redressal Policy",
+    "url": "https://www.unitoko.com/grievance",
+    "datePublished": "2025-08-09",
+    "dateModified": "2025-08-09",
+    "publisher": {
+      "@type": "Organization",
+      "name": "UniToko Ai Tech Pvt. ltd.",
+      "url": "https://www.unitoko.com",
+      "logo": { "@type": "ImageObject", "url": "https://www.unitoko.com/static/logo.png" }
+    }
+  }
+  </script>
+
+  <!-- Small helpers to match your theme without @apply -->
+ 
+</head>
+<body x-data="{ mobileMenuOpen: false, searchOpen: false }" class="bg-white text-gray-900">
+
+  <!-- Skip link -->
+  <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:shadow">Skip to content</a>
+
+    <!-- Announcement Bar -->
+    <div x-data="{ hidden: false, dismiss() { this.hidden = true; } }" x-show="!hidden" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0 transform -translate-y-full" class="relative isolate w-full text-sm text-white bg-gradient-to-r from-[#250a52] via-[#3e1c7a] to-[#250a52] px-4 sm:px-6 py-2.5 flex items-center justify-center gap-3" role="status" aria-live="polite">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-90 flex-shrink-0"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+        <div class="text-center">
+            <span class="font-semibold">Pre-Launch Offer:</span> Get 2 Years of UniToko Premium for FREE!
+            <a href="pre-registration.html" class="ml-3 inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold backdrop-blur hover:bg-white/20">Pre-Register Now</a>
+        </div>
+        <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-white/10" aria-label="Dismiss announcement" @click="dismiss">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ searchOpen: false }" @keydown.escape.window="searchOpen = false" class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="/21.png" alt="UniToko Logo" class="h-8 w-auto">
+                <span class="text-2xl font-bold text-gray-800">UniToko</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                <a href="Article.html" class="text-gray-600 hover:text-primary transition-colors">Article</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                 
+                <!-- NEW "Write Article" BUTTON -->
+               
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all flex-shrink-0">Pre-Register Now</a>
+            </div>
+            <div class="md:hidden flex items-center space-x-4">
+                 <button @click="searchOpen = true" class="text-gray-600 hover:text-primary transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white shadow-lg" x-transition>
+        <nav class="flex flex-col items-center space-y-4 py-4">
+            <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+            <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+            <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+            <a href="Article.html" class="text-primary font-semibold">Article</a>
+            <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            <div class="flex flex-col items-center space-y-4 pt-4 border-t w-full px-6">
+                <!-- NEW "Write Article" BUTTON FOR MOBILE -->
+                <a href="write-article.html" class="text-primary font-semibold w-full text-center py-2">Write Article</a>
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all w-full text-center">Pre-Register Now</a>
+            </div>
+        </nav>
+    </div>
+    <div x-show="searchOpen" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-start justify-center pt-16" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg" @click.away="searchOpen = false">
+            <input type="search" placeholder="Search for products or stores..." class="w-full p-4 border-0 focus:ring-2 focus:ring-primary rounded-lg text-lg">
+        </div>
+    </div>
+</header>
+
+
+
+  
+  <main id="content">
+    <!-- Hero / Title -->
+    <section class="section-padding bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex items-start justify-between flex-wrap gap-6">
+          <div>
+            <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Grievance Redressal Policy</h1>
+            <p class="mt-3 text-base md:text-lg text-gray-600">
+              Effective: <time datetime="2025-08-09">09 August 2025</time> · Last updated:
+              <time datetime="2025-08-09">09 August 2025</time>
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button class="inline-flex items-center rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+                    onclick="window.print()" title="Print or Save as PDF">
+              <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+              Print / Save PDF
+            </button>
+            <a href="contact.html" class="inline-flex items-center rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white hover:bg-opacity-90">Contact</a>
+          </div>
+        </div>
+
+        <!-- Callouts -->
+        <div class="mt-6 rounded-xl border border-purple-100 bg-white p-5 text-[15px] leading-relaxed shadow-sm">
+          <p><strong>Purpose &amp; scope.</strong> This policy explains how customers, sellers, visitors, or any affected person (collectively, “you”) can raise complaints to UniToko and how we handle, track, and resolve them. It applies to issues arising from the <strong>UniToko marketplace and public website</strong>. For <strong>data-protection/privacy complaints</strong>, see §10. For <strong>IP infringement notices</strong>, see §11. For <strong>security/abuse</strong>, see §12.</p>
+          <div class="mt-4 rounded-lg bg-gray-50 p-4">
+            <p><strong>Marketplace role.</strong> UniToko operates as an <strong>intermediary/marketplace</strong> connecting shoppers with independent <strong>Sellers/Stores</strong>. Many order-level remedies (returns, refunds, replacements) depend on Store policies; however, UniToko enforces a <strong>platform baseline</strong> and provides escalation when needed (see Returns &amp; Refunds Policy).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main layout: sticky TOC + vertical divider + content -->
+    <section class="py-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- TOC -->
+        <aside class="lg:col-span-4 xl:col-span-3">
+          <div class="card p-5 lg:sticky lg:top-24">
+            <h2 class="text-base font-semibold text-gray-900">Table of contents</h2>
+            <ol class="mt-3 space-y-2 text-sm">
+              <li><a class="toc-link" href="#definitions">1) Definitions</a></li>
+              <li><a class="toc-link" href="#roles">2) Roles &amp; contact channels</a></li>
+              <li><a class="toc-link" href="#coverage">3) What issues this covers</a></li>
+              <li><a class="toc-link" href="#include">4) What to include in a grievance</a></li>
+              <li><a class="toc-link" href="#timelines">5) Acknowledgement &amp; timelines</a></li>
+              <li><a class="toc-link" href="#workflow">6) Investigation workflow</a></li>
+              <li><a class="toc-link" href="#remedies">7) Remedies we can offer</a></li>
+              <li><a class="toc-link" href="#appeals">8) Appeals &amp; escalation</a></li>
+              <li><a class="toc-link" href="#sellers">9) Notes for Sellers/Stores</a></li>
+              <li><a class="toc-link" href="#privacy">10) Privacy &amp; data-protection grievances</a></li>
+              <li><a class="toc-link" href="#ip">11) IP infringement notices</a></li>
+              <li><a class="toc-link" href="#security">12) Security, fraud &amp; abuse</a></li>
+              <li><a class="toc-link" href="#accessibility">13) Accessibility &amp; vulnerable customers</a></li>
+              <li><a class="toc-link" href="#retention">14) Record-keeping &amp; retention</a></li>
+              <li><a class="toc-link" href="#abuse">15) Abuse of process &amp; fair use</a></li>
+              <li><a class="toc-link" href="#changes">16) Changes to this policy</a></li>
+              <li><a class="toc-link" href="#contact">17) Contact directory</a></li>
+              <li><a class="toc-link" href="#templates">18) Filing templates</a></li>
+            </ol>
+          </div>
+        </aside>
+
+        <!-- Article body (with vertical divider) -->
+        <article class="lg:col-span-8 xl:col-span-9 lg:border-l lg:border-gray-200 lg:pl-8">
+          <section id="definitions" class="prose">
+            <h2>1) Definitions (plain-English)</h2>
+            <ul>
+              <li><strong>Grievance:</strong> A formal complaint that remains <strong>unresolved</strong> after initial support interaction, or that alleges a rights violation (consumer rights, privacy, IP, safety).</li>
+              <li><strong>Support ticket:</strong> An ordinary service request resolved by frontline support (e.g., status update, how-to).</li>
+              <li><strong>Complainant:</strong> The person/entity filing a grievance.</li>
+              <li><strong>Grievance Officer (GO):</strong> UniToko official responsible for intake, investigation oversight, and resolution/escalation of grievances.</li>
+            </ul>
+          </section>
+
+          <section id="roles" class="prose">
+            <h2>2) Roles &amp; contact channels</h2>
+            <h3>A. Primary support (Level 1)</h3>
+            <ul>
+              <li>In-app: <strong>Orders → Help &amp; Support</strong> (fastest for order issues).</li>
+              <li>Email: <a href="mailto:support@unitoko.com">support@unitoko.com</a></li>
+              <li>Hours: 9:00–20:00 IST (Mon–Sat), emergency abuse/security 24×7 via §12.</li>
+            </ul>
+            <h3>B. Grievance Officer (Level 2)</h3>
+            <p><strong>Name:</strong> Ejajul Seikh<br>
+               <strong>Email:</strong> <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a><br>
+               <strong>Postal:</strong> 83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048, India<br>
+               <strong>Phone (optional):</strong> +91- 8287172111</p>
+            <p>Contact the GO if Level 1 did not resolve your issue <strong>or</strong> if your complaint involves rights violations (privacy, consumer harm, IP, safety, illegal content).</p>
+            <h3>C. Additional specialist mailboxes</h3>
+            <ul>
+              <li><strong>Privacy/Data requests:</strong> <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a> (see §10)</li>
+              <li><strong>IP/Copyright &amp; trademark:</strong> <a href="mailto:ip@unitoko.com">ip@unitoko.com</a> (see §11)</li>
+              <li><strong>Security/abuse (urgent):</strong> <a href="mailto:security@unitoko.com">security@unitoko.com</a> (see §12)</li>
+            </ul>
+          </section>
+
+          <section id="coverage" class="prose">
+            <h2>3) What issues this covers (illustrative)</h2>
+            <ul>
+              <li><strong>Orders &amp; fulfillment:</strong> delivery delays, damaged/incorrect items, missing items, RTO disputes.</li>
+              <li><strong>Returns &amp; refunds:</strong> policy interpretation, QC disagreements, refund delays.</li>
+              <li><strong>Store conduct &amp; product authenticity:</strong> suspected counterfeit, safety concerns, misleading claims.</li>
+              <li><strong>Pricing &amp; charges:</strong> overcharge, fee transparency (including shipping/handling).</li>
+              <li><strong>Account actions:</strong> wrongful suspension/blocks, coin/coupon revocation disputes.</li>
+              <li><strong>Accessibility &amp; language support</strong> in using the platform.</li>
+              <li><strong>Privacy or data rights</strong> (access, deletion, correction, consent), <strong>IP infringement</strong>, <strong>security/abuse</strong> (spam, fraud, impersonation).</li>
+            </ul>
+          </section>
+
+          <section id="include" class="prose">
+            <h2>4) What to include in a grievance</h2>
+            <p>Please provide enough detail so we can investigate quickly:</p>
+            <ul>
+              <li><strong>Your details:</strong> full name, contact email/phone, UniToko account ID (if any).</li>
+              <li><strong>Order details:</strong> order ID(s), product link(s), Store name(s).</li>
+              <li><strong>Issue summary:</strong> what happened, when, who you interacted with.</li>
+              <li><strong>Evidence:</strong> screenshots, photos/video (e.g., damage, labels), chat or email copies.</li>
+              <li><strong>Requested remedy:</strong> refund, replacement, policy clarification, account reinstatement, etc.</li>
+              <li><strong>Prior ticket reference:</strong> Level-1 ticket/case ID, if available.</li>
+            </ul>
+            <p>You may file via <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a> or by post to the GO (see §2-B). Keep your subject line clear: <span class="kbd">Grievance – [Order ID / Topic]</span>.</p>
+          </section>
+
+          <section id="timelines" class="prose">
+            <h2>5) Acknowledgement &amp; resolution timelines</h2>
+            <ul>
+              <li><strong>Acknowledgement:</strong> We aim to acknowledge your grievance <strong>within 24–72 hours</strong> of receipt.</li>
+              <li><strong>Resolution target:</strong> We aim to provide a <strong>reasoned resolution or update within 15–30 days</strong>, depending on complexity and third-party (Store/carrier/PSP) coordination.</li>
+              <li><strong>Urgent categories:</strong> safety risks, counterfeit alerts, privacy breaches, or payment fraud are <strong>expedited</strong> on priority.</li>
+            </ul>
+            <p>These targets align with Indian consumer protection and intermediary norms; statutory timelines (if any) will prevail where stricter.</p>
+          </section>
+
+          <section id="workflow" class="prose">
+            <h2>6) Investigation workflow (how we handle it)</h2>
+            <ol>
+              <li><strong>Intake &amp; triage</strong> by the GO team; we create a <strong>case ID</strong> and confirm scope.</li>
+              <li><strong>Evidence gathering</strong> from you, the Store, the carrier (e.g., Delhivery), PSPs, and UniToko logs.</li>
+              <li><strong>Assessment</strong> against the <strong>UniToko Baseline</strong> (returns/refunds), Store policy, Terms, and applicable law.</li>
+              <li><strong>Decision &amp; remedy</strong> (e.g., refund, replacement, fee credit, account action, content removal).</li>
+              <li><strong>Closure note</strong> explaining the outcome and how to <strong>appeal</strong> (see §8).</li>
+            </ol>
+          </section>
+
+          <section id="remedies" class="prose">
+            <h2>7) Remedies we can offer (examples)</h2>
+            <ul>
+              <li><strong>Order remedies:</strong> refund, replacement, exchange, fee adjustment, reverse shipping label.</li>
+              <li><strong>Account remedies:</strong> warning removal, reinstatement, or limits lifted.</li>
+              <li><strong>Listing actions:</strong> edit, suspend, or remove product/store pages; require compliance documents.</li>
+              <li><strong>Policy clarifications &amp; training</strong> for Stores; communications to affected buyers.</li>
+              <li><strong>Escalation to authorities</strong> where legally required (e.g., counterfeit, fraud, safety hazards).</li>
+            </ul>
+          </section>
+
+          <section id="appeals" class="prose">
+            <h2>8) Appeals &amp; escalation</h2>
+            <p>If you disagree with the decision, reply to the closure note or email <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a> within <strong>7 days</strong> quoting your <strong>case ID</strong> and any new evidence. We will conduct a <strong>secondary review</strong> by a senior officer. External options (India) include the <strong>National Consumer Helpline (1915)</strong> or consumer commission per applicable law.</p>
+          </section>
+
+          <section id="sellers" class="prose">
+            <h2>9) Special notes for Sellers/Stores</h2>
+            <ul>
+              <li>Maintain a visible <strong>Store policy</strong> for returns/refunds and honor the <strong>UniToko Baseline</strong> at minimum.</li>
+              <li>Respond to UniToko information requests <strong>within 2 business days</strong>; upload QC photos/notes for transparency.</li>
+              <li>Provide accurate contact and KYC details; ensure compliance with labeling, warranty, and safety laws.</li>
+              <li>Repeated non-cooperation may lead to listing suspension, payout holds, or account termination per the Terms.</li>
+            </ul>
+          </section>
+
+          <section id="privacy" class="prose">
+            <h2>10) Privacy &amp; data-protection grievances (DPDP/GDPR/CCPA)</h2>
+            <ul>
+              <li>Use <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a> to exercise rights (access, correction, deletion, withdrawal of consent, portability where applicable).</li>
+              <li>We verify identity before processing requests. We aim to respond <strong>within 15–30 days</strong> or the timeline mandated by your jurisdiction.</li>
+              <li>If unresolved, you may escalate to the <strong>Data Protection Board of India</strong> (once operational/where applicable) or your local authority (EEA/UK/California, as relevant).</li>
+            </ul>
+          </section>
+
+          <section id="ip" class="prose">
+            <h2>11) IP infringement notices (copyright/trademark)</h2>
+            <p>Send notices to <a href="mailto:ip@unitoko.com">ip@unitoko.com</a> containing:</p>
+            <ul>
+              <li>Your contact details; work/mark claimed; location of infringing material (URLs/order IDs); proof of ownership/authorization; a good-faith statement; and a declaration of accuracy.</li>
+            </ul>
+            <p>We may remove/suspend content or listings while we review; we forward notice details to the alleged infringer for response.</p>
+          </section>
+
+          <section id="security" class="prose">
+            <h2>12) Security, fraud &amp; abuse (24×7)</h2>
+            <p>Report impersonation, phishing, payment fraud, malware, scraping, or illegal content to <a href="mailto:security@unitoko.com">security@unitoko.com</a> with evidence (order IDs, URLs, headers, screenshots). We may <strong>freeze accounts</strong>, block transactions, and inform competent authorities where required by law.</p>
+          </section>
+
+          <section id="accessibility" class="prose">
+            <h2>13) Accessibility &amp; vulnerable-customer support</h2>
+            <p>If you require <strong>accessibility accommodations</strong> (language, disability, senior citizens), tell us in your message; we can arrange <strong>call-backs, assisted filing, or language support</strong> subject to availability.</p>
+          </section>
+
+          <section id="retention" class="prose">
+            <h2>14) Record-keeping &amp; retention</h2>
+            <p>We retain grievance records for <strong>at least 24 months</strong> from closure (or longer if required by law/litigation). Aggregated analytics help us improve policies and training.</p>
+          </section>
+
+          <section id="abuse" class="prose">
+            <h2>15) Abuse of process &amp; fair use</h2>
+            <p>We may decline or close grievances that are clearly <strong>frivolous</strong>, malicious, duplicative, or filed in bad faith. Repeated abuse can lead to account restrictions under the Terms. This does not limit your legal rights.</p>
+          </section>
+
+          <section id="changes" class="prose">
+            <h2>16) Changes to this policy</h2>
+            <p>We may update this policy periodically. The <strong>“Last updated”</strong> date shows the latest revision. Material changes will be highlighted in-app/on our website.</p>
+          </section>
+
+          <section id="contact" class="prose">
+            <h2>17) Contact directory</h2>
+            <ul>
+              <li><strong>Level-1 Support:</strong> <a href="mailto:support@unitoko.com">support@unitoko.com</a> (Orders → Help &amp; Support)</li>
+              <li><strong>Grievance Officer:</strong> <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a> (see §2-B for postal)</li>
+              <li><strong>Privacy:</strong> <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a></li>
+              <li><strong>IP:</strong> <a href="mailto:ip@unitoko.com">ip@unitoko.com</a></li>
+              <li><strong>Security/Abuse:</strong> <a href="mailto:security@unitoko.com">security@unitoko.com</a></li>
+            </ul>
+          </section>
+
+          <section id="templates" class="prose">
+            <h2>18) Filing templates (optional)</h2>
+            <h3>A) General grievance (copy/paste &amp; fill)</h3>
+            <p><strong>Subject:</strong> <em>Grievance – [Order ID / Topic]</em></p>
+            <p><strong>Body:</strong></p>
+            <ul>
+              <li>Name &amp; phone:</li>
+              <li>UniToko email/ID:</li>
+              <li>Order ID(s) / URL(s):</li>
+              <li>Issue summary (what/when):</li>
+              <li>Evidence attached (photos/video/docs):</li>
+              <li>Remedy requested:</li>
+              <li>Prior ticket ID (if any):</li>
+            </ul>
+
+            <h3>B) Privacy request</h3>
+            <p><strong>Subject:</strong> <em>Privacy Request – [Access/Delete/Correct]</em><br>
+               <strong>Body:</strong> include the email used on UniToko, request type, scope, and any IDs to help locate data.</p>
+
+            <h3>C) IP notice</h3>
+            <p><strong>Subject:</strong> <em>IP Notice – [Copyright/Trademark]</em><br>
+               <strong>Body:</strong> rights holder name, description of work/mark, infringing URL/order ID, ownership proof, good-faith statement, and declaration of accuracy.</p>
+
+            <p><em>Note: This policy is designed for practical clarity and alignment with Indian consumer and intermediary norms. It does not constitute legal advice. Please have counsel review and tailor details (e.g., GO name/contact, Seller timelines) for your specific operations.</em></p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-sm pt-10 pb-6 px-4 sm:px-6 lg:px-12" role="contentinfo">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Column 1 -->
+        <div class="lg:col-span-1">
+          <a href="index.html" class="inline-block mb-3">
+            <img src="images/UtWhiteNameLogo.png" alt="UniToko Logo" class="h-10">
+          </a>
+          <p class="text-white/80 leading-snug max-w-xs">Empowering India’s retail with identity, discovery, and delivery.</p>
+          <div class="mt-4">
+            <a href="pre-registration.html" class="inline-block px-4 py-2 rounded-md bg-[#f0c104] text-gray-900 font-semibold hover:bg-yellow-400 transition">
+              Pre-Register Now
+            </a>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="text-white/80 text-xs">Coming soon on</span>
+              <img src="images/icons8-google-play-48.png" alt="Google Play" class="h-7">
+              <img src="images/icons8-App-Store-48.png" alt="App Store" class="h-7">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.581-.666 2.477 0 1.645.836 3.099 2.108 3.951-.76-.025-1.474-.234-2.102-.578v.062c0 2.298 1.634 4.214 3.793 4.649-.396.108-.816.166-1.249.166-.303 0-.596-.03-.885-.083.606 1.885 2.364 3.264 4.448 3.303-1.621 1.274-3.666 2.031-5.891 2.031-.383 0-.76-.022-1.131-.066 2.099 1.353 4.599 2.143 7.29 2.143 8.748 0 13.529-7.249 13.529-13.529 0-.206-.005-.412-.013-.617.928-.67 1.729-1.503 2.364-2.45z"/></svg>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-4.481 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="lg:col-span-1 grid grid-cols-2 gap-1">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Explore</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+              <li><a href="about.html" class="hover:text-yellow-400 text-white/80 transition">About</a></li>
+              <li><a href="features.html" class="hover:text-yellow-400 text-white/80 transition">Features</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact</a></li>
+              <li><a href="Article.html" class="hover:text-yellow-400 text-white/80 transition">Article</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Support</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+               
+              <li><a href="pre-registration.html" class="hover:text-yellow-400 text-white/80 transition">Pre-registration</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="lg:col-span-1 grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Legal</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+                           <li><a href="terms-and-conditions.html" class="hover:text-yellow-400 text-white/80 transition">Terms &amp; Conditions</a></li>
+              <li><a href="privacy.html" class="hover:text-yellow-400 text-white/80 transition">Privacy Policy</a></li>
+              <li><a href="returns-and-refund-policy.html" class="hover:text-yellow-400 text-white/80 transition">Refund Policy &amp; Return</a></li>
+              <li><a href="shipping-and-delivery-policy.html" class="hover:text-yellow-400 text-white/80 transition">Shipping &amp; Delivery Policy</a></li>
+              <li><a href="UniTokoGrievanceRedressalPolicy.html" class="hover:text-yellow-400 text-white/80 transition">Grievance Redressal</a></li>
+            </ul>
+          </div>
+          <div class="text-xs text-white/70">
+            <p class="font-semibold text-white">UniToko Ai Tech Private Limited</p>
+            <p>83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048</p>
+            <br>
+            <div class="text-xs text-white/70">
+              <p class="font-semibold text-white mb-1">Support</p>
+              <p>Email: <a href="mailto:support@unitoko.com" class="underline">support@unitoko.com</a></p>
+              <p>Phone: <a href="tel:+91-0000000000" class="underline">+91-9630719393</a></p>
+              <p class="mt-2 font-semibold text-white mb-1">Grievance Officer</p>
+              <p>Email: <a href="mailto:grievance@unitoko.com" class="underline">grievance@unitoko.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 pt-4 text-center text-xs text-white/60 border-t border-white/10">
+        <p>© <span id="year"></span> UniToko Internet Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RIYA AI ASSISTANT & CHAT BOX -->
+  <div x-data="{ chatOpen: false, tooltipVisible: false }">
+    <!-- Riya Avatar -->
+    <div id="riya-assistant" class="assistant-avatar"
+         @click="chatOpen = !chatOpen; tooltipVisible = false"
+         @mouseenter="if (!chatOpen) tooltipVisible = true"
+         @mouseleave="tooltipVisible = false">
+      <img src="images/RiyaChatbot.png" alt="Riya AI Assistant" />
+      <div id="riya-tooltip" class="tooltip" :class="{ 'visible': tooltipVisible }">👋 Hey! I’m Riya from UniToko.</div>
+    </div>
+
+    <!-- Riya Chat Box -->
+    <div id="riya-chatbox" class="chatbox" :class="{ 'visible': chatOpen }">
+      <!-- Chat Header -->
+      <div class="flex items-center justify-between p-4 bg-primary text-white flex-shrink-0">
+        <div class="flex items-center gap-3">
+          <img src="images/RiyaChatbot.png" class="w-10 h-10 rounded-full border-2 border-white/50" alt="Riya">
+          <div>
+            <p class="font-bold">Riya</p>
+            <p class="text-xs opacity-80">AI Assistant</p>
+          </div>
+        </div>
+        <button @click="chatOpen = false" class="p-1 rounded-full hover:bg-white/20 transition-colors" aria-label="Close chat">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+
+      <!-- Messages Area -->
+      <div class="flex-grow p-4 space-y-4 overflow-y-auto">
+        <div class="flex">
+          <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+            <p class="text-sm text-gray-800">Hi there! 👋 How can I help you grow your business today?</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+            <p class="text-sm text-gray-800">You can ask me things like "How do I add a new product?" or "What are the latest trends?".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="p-4 bg-white border-t flex-shrink-0">
+        <div class="relative">
+          <input type="text" placeholder="Ask me anything..." class="w-full py-2 pl-4 pr-12 rounded-full border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary">
+          <button class="absolute right-1 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary text-white hover:bg-opacity-90" aria-label="Send">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

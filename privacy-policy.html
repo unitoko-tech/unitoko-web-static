@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - UniToko</title>
+  <meta name="description" content="Privacy Policy for UniToko’s public website: what we collect, how we use it, your rights, cookies, security, and grievance redressal." />
+  <link rel="canonical" href="https://www.unitoko.com/privacy" />
+
+  <!-- Fonts & Frameworks -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#250a52" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Privacy Policy • UniToko" />
+  <meta property="og:description" content="How UniToko collects and uses information on our public website, and your choices." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.unitoko.com/privacy" />
+  <meta property="og:site_name" content="UniToko" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- JSON-LD (WebPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "UniToko Privacy Policy",
+    "url": "https://www.unitoko.com/privacy",
+    "datePublished": "2025-08-09",
+    "dateModified": "2025-08-09",
+    "publisher": {
+      "@type": "Organization",
+      "name": "UniToko Ai Tech Private Limited",
+      "url": "https://www.unitoko.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.unitoko.com/static/logo.png"
+      }
+    }
+  }
+  </script>
+
+  
+</head>
+<body x-data="{ mobileMenuOpen: false, searchOpen: false }" class="bg-white text-gray-900">
+
+    <!-- Announcement Bar -->
+    <div x-data="{ hidden: false, dismiss() { this.hidden = true; } }" x-show="!hidden" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0 transform -translate-y-full" class="relative isolate w-full text-sm text-white bg-gradient-to-r from-[#250a52] via-[#3e1c7a] to-[#250a52] px-4 sm:px-6 py-2.5 flex items-center justify-center gap-3" role="status" aria-live="polite">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-90 flex-shrink-0"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+        <div class="text-center">
+            <span class="font-semibold">Pre-Launch Offer:</span> Get 2 Years of UniToko Premium for FREE!
+            <a href="pre-registration.html" class="ml-3 inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold backdrop-blur hover:bg-white/20">Pre-Register Now</a>
+        </div>
+        <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-white/10" aria-label="Dismiss announcement" @click="dismiss">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ searchOpen: false }" @keydown.escape.window="searchOpen = false" class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="/21.png" alt="UniToko Logo" class="h-8 w-auto">
+                <span class="text-2xl font-bold text-gray-800">UniToko</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                <a href="Article.html" class="text-gray-600 hover:text-primary transition-colors">Article</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                 
+                <!-- NEW "Write Article" BUTTON -->
+               
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all flex-shrink-0">Pre-Register Now</a>
+            </div>
+            <div class="md:hidden flex items-center space-x-4">
+                 <button @click="searchOpen = true" class="text-gray-600 hover:text-primary transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white shadow-lg" x-transition>
+        <nav class="flex flex-col items-center space-y-4 py-4">
+            <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+            <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+            <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+            <a href="Article.html" class="text-primary font-semibold">Article</a>
+            <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            <div class="flex flex-col items-center space-y-4 pt-4 border-t w-full px-6">
+                <!-- NEW "Write Article" BUTTON FOR MOBILE -->
+                <a href="write-article.html" class="text-primary font-semibold w-full text-center py-2">Write Article</a>
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all w-full text-center">Pre-Register Now</a>
+            </div>
+        </nav>
+    </div>
+    <div x-show="searchOpen" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-start justify-center pt-16" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg" @click.away="searchOpen = false">
+            <input type="search" placeholder="Search for products or stores..." class="w-full p-4 border-0 focus:ring-2 focus:ring-primary rounded-lg text-lg">
+        </div>
+    </div>
+</header>
+
+
+
+  <main id="content">
+    <!-- Hero / Page title -->
+    <section class="section-padding bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex items-start justify-between flex-wrap gap-6">
+          <div>
+          
+            <h1 class="mt-1 text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Privacy Policy</h1>
+            <p class="mt-5 text-base md:text-lg text-gray-600">Effective: <time datetime="2025-08-09">09 August 2025</time> · Last updated: <time datetime="2025-08-09">09 August 2025</time></p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button class="inline-flex items-center rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50" onclick="window.print()" title="Print or Save as PDF">
+              <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+              Print / Save PDF
+            </button>
+            <a href="contact.html" class="inline-flex items-center rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white hover:bg-opacity-90">Contact</a>
+          </div>
+        </div>
+
+        <!-- Scope / Who we are note -->
+        <div class="mt-6 rounded-xl border border-purple-100 bg-white p-5 text-[15px] leading-relaxed shadow-sm">
+          <p class=""><strong>Scope:</strong> This policy covers personal data collected on UniToko’s <em>public/marketing website</em> (the “Site”), including landing pages, forms (e.g., waitlist, pre‑registration, contact), and analytics. If you later create a UniToko buyer or seller account, the in‑app Privacy Policy will apply in addition to this document.</p>
+          <div class="mt-4 rounded-lg bg-gray-50 p-4">
+            <p><strong>Who we are:</strong> “UniToko”, “we”, “our”, or “us” refers to <strong>UniToko Ai Tech Private Limited</strong> (trading as <strong>UniToko</strong>) with its registered office at <strong>83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048</strong>. Privacy queries: <a href="mailto:privacy@unitoko.com" class="font-medium text-primary underline">privacy@unitoko.com</a> · Security: <a href="mailto:security@unitoko.com" class="font-medium text-primary underline">security@unitoko.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Main 2-col layout: sticky TOC + Article content -->
+    <section class="py-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- TOC -->
+        <aside class="lg:col-span-4 xl:col-span-3">
+          <div class="card p-5 lg:sticky lg:top-24">
+            <h2 class="text-base font-semibold text-gray-900">Table of contents</h2>
+            <ol class="mt-3 space-y-2 text-sm">
+              <li><a class="toc-link" href="#what-we-collect">1. What we collect</a></li>
+              <li><a class="toc-link" href="#how-we-use">2. How we use your information</a></li>
+              <li><a class="toc-link" href="#no-sale">3. No sale of personal data</a></li>
+              <li><a class="toc-link" href="#retention">4. Retention</a></li>
+              <li><a class="toc-link" href="#sharing">5. How we share information</a></li>
+              <li><a class="toc-link" href="#cookies">6. Cookies and similar technologies</a></li>
+              <li><a class="toc-link" href="#transfers">7. International data transfers</a></li>
+              <li><a class="toc-link" href="#security">8. Security</a></li>
+              <li><a class="toc-link" href="#rights">9. Your rights & choices</a></li>
+              <li><a class="toc-link" href="#regional">10. Region‑specific disclosures</a></li>
+              <li><a class="toc-link" href="#children">11. Children’s privacy</a></li>
+              <li><a class="toc-link" href="#links">12. Third‑party links</a></li>
+              <li><a class="toc-link" href="#automated">13. Automated decision‑making</a></li>
+              <li><a class="toc-link" href="#changes">14. Changes to this policy</a></li>
+              <li><a class="toc-link" href="#contact">15. Contact us (global)</a></li>
+              <li><a class="toc-link" href="#grievance">16. India grievance redressal</a></li>
+              <li><a class="toc-link" href="#examples">17. Additional details & examples</a></li>
+              <li><a class="toc-link" href="#controls">18. Your controls (how‑to)</a></li>
+            </ol>
+          </div>
+        </aside>
+
+        <!-- Article body -->
+        <article class="lg:col-span-8 xl:col-span-9 lg:border-l lg:border-gray-200 lg:pl-8">
+          <!-- Quick summary -->
+          <section id="summary" class="card p-6">
+            <h2 class="text-2xl font-bold">Plain‑English summary (quick take)</h2>
+            <ul class="mt-3 list-disc pl-6 text-[15px] leading-7 text-gray-700">
+              <li>We collect the info you submit (e.g., name, email, phone, store details), plus basic analytics (pages viewed, device, IP).</li>
+              <li>We use it to answer enquiries, evaluate seller interest, send updates you asked for, improve the Site, and secure our systems.</li>
+              <li>We do <strong>not</strong> sell your personal data.</li>
+              <li>You can opt out of marketing at any time and control cookies.</li>
+              <li>Depending on where you live, you may have legal rights to access, delete, correct, or port your data.</li>
+            </ul>
+          </section>
+
+          <!-- Main sections -->
+          <section class="prose mt-8" id="what-we-collect">
+            <h2>1. What we collect</h2>
+            <p>We collect the following categories of information when you use the Site.</p>
+            <h3>A. Information you provide directly</h3>
+            <ul>
+              <li><strong>Contact & identity data:</strong> name, email, phone number, city, country.</li>
+              <li><strong>Business/store data (for sellers):</strong> store name, category, address/market, GST status, website/social links, product interests, and any free‑text notes.</li>
+              <li><strong>Communication content:</strong> messages you send via forms or email; call notes if you schedule a call.</li>
+              <li><strong>Preferences:</strong> marketing/subscription choices.</li>
+            </ul>
+            <h3>B. Information collected automatically</h3>
+            <ul>
+              <li><strong>Usage data:</strong> pages viewed, time on page, referring URLs, UTM parameters, clicks, scroll depth.</li>
+              <li><strong>Technical data:</strong> IP address, device identifiers, browser type/version, OS, screen size, language, approximate location inferred from IP (city/region level).</li>
+              <li><strong>Cookies/trackers:</strong> strictly necessary cookies (for security and core site features), analytics cookies (aggregated performance insights), and—if you consent—marketing/advertising cookies (see §6).</li>
+            </ul>
+            <h3>C. Information from third parties</h3>
+            <ul>
+              <li><strong>Lead enrichment (optional):</strong> if you submit a business email/URL, we may append public firmographics (e.g., industry, size).</li>
+              <li><strong>Referrals/partners:</strong> information shared by incubators, accelerators, or channel partners if you authorize them to refer you.</li>
+              <li><strong>Anti‑abuse services:</strong> limited data to detect spam/bot traffic.</li>
+            </ul>
+            <p><em>We do not intentionally collect sensitive personal data (e.g., health, biometrics). Please avoid sharing such data via open text fields.</em></p>
+          </section>
+
+          <section class="prose" id="how-we-use">
+            <h2>2. How we use your information (purposes & legal bases)</h2>
+            <p>We process personal data for the purposes below. Legal bases apply cumulatively and vary by jurisdiction:</p>
+            <ol>
+              <li><strong>Responding to enquiries & providing updates</strong> (contact forms, waitlist, demo requests). <em>Bases:</em> consent; performance of pre‑contractual steps; legitimate interests (operate and grow the business).</li>
+              <li><strong>Evaluating seller interest & onboarding readiness</strong> (for prospective stores). <em>Bases:</em> pre‑contractual steps; legitimate interests.</li>
+              <li><strong>Operating, securing, and improving the Site</strong> (troubleshooting, analytics, A/B tests, preventing fraud/abuse). <em>Bases:</em> legitimate interests; for non‑essential cookies, consent.</li>
+              <li><strong>Marketing communications</strong> (newsletters, product updates, events) if you opt in or where permitted. <em>Bases:</em> consent; legitimate interests (B2B direct marketing, where allowed). Opt‑out anytime.</li>
+              <li><strong>Legal compliance & enforcement</strong> (e.g., responding to lawful requests; enforcing terms; protecting rights). <em>Bases:</em> legal obligation; legitimate interests.</li>
+            </ol>
+          </section>
+
+          <section class="prose" id="no-sale">
+            <h2>3. No sale of personal data</h2>
+            <p>We do not sell your personal information. If we use the term “share” it refers to disclosures described in §5 and, in California, does <strong>not</strong> include a sale under the CCPA/CPRA. If we ever engage in cross‑context behavioral advertising on the Site, we will present a clear <strong>“Do Not Sell or Share My Personal Information”</strong> link and honor opt‑out signals where required.</p>
+          </section>
+
+          <section class="prose" id="retention">
+            <h2>4. Retention</h2>
+            <p>We keep data only as long as needed for the purposes in §2 or as required by law:</p>
+            <ul>
+              <li><strong>Lead/contact records:</strong> up to <strong>24 months</strong> after last interaction (or earlier upon request).</li>
+              <li><strong>Analytics/telemetry logs:</strong> typically <strong>12–26 months</strong> (provider settings).</li>
+              <li><strong>Security logs/abuse prevention:</strong> up to <strong>36 months</strong> where necessary.</li>
+              <li><strong>Email marketing consents:</strong> retained to document preferences unless you request deletion.</li>
+            </ul>
+          </section>
+
+          <section class="prose" id="sharing">
+            <h2>5. How we share information</h2>
+            <p>We share personal data only with:</p>
+            <ul>
+              <li><strong>Service providers/Processors:</strong> hosting/CDN, security (e.g., WAF/anti‑bot), analytics, email delivery, form processing, CRM. These providers process data under contract and only as instructed by us.</li>
+              <li><strong>Business partners (optional):</strong> if you ask us to connect you (e.g., incubators, pilot partners).</li>
+              <li><strong>Corporate transactions:</strong> in a merger, acquisition, or asset sale, subject to confidentiality and continued protection.</li>
+              <li><strong>Legal & safety:</strong> to comply with laws, respond to lawful requests, or protect rights, safety, and property.</li>
+            </ul>
+            <p>We maintain a record of our key sub‑processors and will provide it on request. You can contact us (see §15/§16) to learn more.</p>
+          </section>
+
+          <section class="prose" id="cookies">
+            <h2>6. Cookies and similar technologies</h2>
+            <ul>
+              <li><strong>Strictly necessary cookies</strong> enable core site functionality and security; they cannot be switched off.</li>
+              <li><strong>Analytics cookies</strong> help us understand aggregate usage and improve content.</li>
+              <li><strong>Marketing/advertising cookies</strong> may be used to show relevant UniToko ads on other sites (remarketing) <strong>only if you consent</strong>.</li>
+            </ul>
+            <p><strong>Your choices:</strong> Use our cookie banner to accept/reject non‑essential cookies; adjust browser settings; or use platform tools (e.g., Google’s Ad Settings). If you clear cookies, your preferences may reset.</p>
+          </section>
+
+          <section class="prose" id="transfers">
+            <h2>7. International data transfers</h2>
+            <p>We may process data in countries outside your own (e.g., hosting, support). When we transfer personal data internationally, we rely on appropriate safeguards, such as <strong>Standard Contractual Clauses</strong>, and implement technical/organizational measures (encryption in transit, access controls). For India residents, cross‑border transfers are performed in accordance with the <strong>Digital Personal Data Protection Act, 2023 (DPDP)</strong>.</p>
+          </section>
+
+          <section class="prose" id="security">
+            <h2>8. Security</h2>
+            <p>We use reasonable and appropriate safeguards to protect personal data, including HTTPS/TLS, access controls, role‑based access, and least‑privilege policies. No system is 100% secure; please notify us immediately if you suspect a security issue at <a href="mailto:security@unitoko.com">security@unitoko.com</a>.</p>
+          </section>
+
+          <section class="prose" id="rights">
+            <h2>9. Your rights & choices</h2>
+            <p>Your privacy rights depend on your location. Subject to exceptions, you may request to:</p>
+            <ul>
+              <li><strong>Access</strong> a copy of your personal data.</li>
+              <li><strong>Correct</strong> inaccurate or incomplete data.</li>
+              <li><strong>Delete</strong> your data.</li>
+              <li><strong>Port</strong> your data in a machine‑readable format.</li>
+              <li><strong>Object</strong> to or <strong>restrict</strong> certain processing (e.g., direct marketing).</li>
+              <li><strong>Withdraw consent</strong> where processing is based on consent.</li>
+            </ul>
+            <p>We may need to verify your identity before fulfilling a request. Contact us via §15 or the India grievance channel in §16.</p>
+          </section>
+
+          <section class="prose" id="regional">
+            <h2>10. Region‑specific disclosures</h2>
+            <h3>A. India (DPDP Act, 2023)</h3>
+            <ul>
+              <li><strong>Data Fiduciary:</strong> UniToko Ai Tech Private Limited</li>
+              <li><strong>Data Principals’ rights:</strong> access, correction, erasure, grievance redressal, and nomination rights.</li>
+              <li><strong>Consent:</strong> We rely on your consent for non‑essential cookies/marketing and permissible purposes for security and lawful processing.</li>
+              <li><strong>Grievance redressal:</strong> See §16 to contact our Grievance Officer. You may also escalate to the <strong>Data Protection Board of India</strong> once operational/where applicable.</li>
+            </ul>
+            <h3>B. EEA/UK (GDPR/UK GDPR)</h3>
+            <ul>
+              <li><strong>Controller:</strong> UniToko Ai Tech Private Limited</li>
+              <li><strong>Legal bases:</strong> consent, contract, legitimate interests, legal obligation (see §2).</li>
+              <li><strong>Representative/DPO (if applicable):</strong> [Details if appointed].</li>
+              <li><strong>Complaints:</strong> You may lodge a complaint with your local Data Protection Authority; UK residents may contact the ICO.</li>
+            </ul>
+            <h3>C. California (CCPA/CPRA)</h3>
+            <ul>
+              <li><strong>Categories collected:</strong> identifiers (name, email, IP), commercial information (form interest), internet activity (analytics), geolocation (approximate), inferences (basic interest segments).</li>
+              <li><strong>Purposes:</strong> as described in §2; <strong>no sale</strong> of personal information.</li>
+              <li><strong>Rights:</strong> know/access, correct, delete, opt‑out of sale/sharing (if applicable), limit sensitive data (not collected).</li>
+              <li><strong>Non‑discrimination:</strong> we will not discriminate for exercising your rights.</li>
+            </ul>
+          </section>
+
+          <section class="prose" id="children">
+            <h2>11. Children’s privacy</h2>
+            <p>The Site is intended for individuals <strong>18 years and older</strong>. We do not knowingly collect personal data from children. If you believe a child has provided personal data, contact us to delete it.</p>
+          </section>
+
+          <section class="prose" id="links">
+            <h2>12. Third‑party links</h2>
+            <p>Our Site may link to third‑party websites/services. Their privacy practices are governed by their own policies. Please review those policies before providing information.</p>
+          </section>
+
+          <section class="prose" id="automated">
+            <h2>13. Automated decision‑making</h2>
+            <p>We do <strong>not</strong> use automated decision‑making that produces legal or similarly significant effects about you on the Site.</p>
+          </section>
+
+          <section class="prose" id="changes">
+            <h2>14. Changes to this policy</h2>
+            <p>We may update this policy from time to time. The “Last updated” date at the top indicates the most recent revision. Material changes will be highlighted on the Site or via email (if appropriate).</p>
+          </section>
+
+          <section class="prose" id="contact">
+            <h2>15. Contact us (global)</h2>
+            <address class="not-italic">
+              <p><strong>Email:</strong> <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a></p>
+              <p><strong>Postal:</strong> UniToko Ai Tech Private Limited, 83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048, [City, State, PIN], India</p>
+              <p><strong>Security issues:</strong> <a href="mailto:security@unitoko.com">security@unitoko.com</a></p>
+            </address>
+          </section>
+
+          <section class="prose" id="grievance">
+            <h2>16. India grievance redressal (IT Rules &amp; DPDP)</h2>
+            <address class="not-italic">
+              <p><strong>Grievance Officer:</strong> [Full Name]</p>
+              <p><strong>Email:</strong> <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a></p>
+              <p><strong>Postal:</strong> 83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048, [City, State, PIN], India</p>
+              <p>We aim to acknowledge complaints within <strong>24–72 hours</strong> and resolve them within <strong>15–30 days</strong> depending on complexity.</p>
+            </address>
+          </section>
+
+          <section class="prose" id="examples">
+            <h2>17. Additional details & examples (informative)</h2>
+            <ul>
+              <li><strong>Forms:</strong> When you submit a pre‑registration form, we store your details in our CRM to contact you about availability, onboarding steps, and pilot programs.</li>
+              <li><strong>Email marketing:</strong> If you tick “subscribe”, we’ll send periodic product updates. Every message includes an unsubscribe link.</li>
+              <li><strong>Analytics:</strong> We use aggregated reports to learn which pages are most helpful and where users drop off, so we can improve navigation and content.</li>
+              <li><strong>Security:</strong> We may use a CDN/WAF to filter malicious requests; IP data can be processed transiently for this purpose.</li>
+            </ul>
+          </section>
+
+          <section class="prose" id="controls">
+            <h2>18. Your controls (how‑to)</h2>
+            <ul>
+              <li><strong>Unsubscribe:</strong> Click the link in any marketing email or write to <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a>.</li>
+              <li><strong>Cookie preferences:</strong> Use the cookie banner or your browser’s settings.</li>
+              <li><strong>Access/Deletion/Correction requests:</strong> Email <a href="mailto:privacy@unitoko.com">privacy@unitoko.com</a> with the subject line <span class="kbd">Privacy Request – [Access/Delete/Correct]</span> and include enough information to identify your records (e.g., email used on the form).</li>
+            </ul>
+            <p><em>Note: This template is provided for convenience and does not constitute legal advice. Consult counsel to tailor jurisdictional disclosures (e.g., appointing a GDPR representative/DPO, finalizing the grievance officer details, and confirming your exact service providers and cookie categories).</em></p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (reused; small tweaks only) -->
+  <footer class="bg-gray-900 text-white text-sm pt-10 pb-6 px-4 sm:px-6 lg:px-12" role="contentinfo">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-1">
+          <a href="index.html" class="inline-block mb-3">
+            <img src="images/UtWhiteNameLogo.png" alt="UniToko Logo" class="h-10">
+          </a>
+          <p class="text-white/80 leading-snug max-w-xs">Empowering India’s retail with identity, discovery, and delivery.</p>
+          <div class="mt-4">
+            <a href="pre-registration.html" class="inline-block px-4 py-2 rounded-md bg-[#f0c104] text-gray-900 font-semibold hover:bg-yellow-400 transition">Pre-Register Now</a>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="text-white/80 text-xs">Coming soon on</span>
+              <img src="images/icons8-google-play-48.png" alt="Google Play" class="h-7">
+              <img src="images/icons8-app-store-48.png" alt="App Store" class="h-7">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.581-.666 2.477 0 1.645.836 3.099 2.108 3.951-.76-.025-1.474-.234-2.102-.578v.062c0 2.298 1.634 4.214 3.793 4.649-.396.108-.816.166-1.249.166-.303 0-.596-.03-.885-.083.606 1.885 2.364 3.264 4.448 3.303-1.621 1.274-3.666 2.031-5.891 2.031-.383 0-.76-.022-1.131-.066 2.099 1.353 4.599 2.143 7.29 2.143 8.748 0 13.529-7.249 13.529-13.529 0-.206-.005-.412-.013-.617.928-.67 1.729-1.503 2.364-2.45z"/></svg>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-4.481 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-1 grid grid-cols-2 gap-1">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Explore</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+              <li><a href="about.html" class="hover:text-yellow-400 text-white/80 transition">About</a></li>
+              <li><a href="features.html" class="hover:text-yellow-400 text-white/80 transition">Features</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact</a></li>
+              <li><a href="Article.html" class="hover:text-yellow-400 text-white/80 transition">Article</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Support</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+               
+              <li><a href="C:\\Internship\\Unitoko static web - Copy\\MultiPageWeb\\pre-registration.html" class="hover:text-yellow-400 text-white/80 transition">Pre-registration</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:col-span-1 grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Legal</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+              <li><a href="terms-and-conditions.html" class="hover:text-yellow-400 text-white/80 transition">Terms &amp; Conditions</a></li>
+              <li><a href="privacy-policy.html" class="hover:text-yellow-400 text-white/80 transition">Privacy Policy</a></li>
+              <li><a href="returns-and-refund-policy.html" class="hover:text-yellow-400 text-white/80 transition">Refund Policy &amp; Return</a></li>
+              <li><a href="shipping-and-delivery-policy.html" class="hover:text-yellow-400 text-white/80 transition">Shipping &amp; Delivery Policy</a></li>
+              <li><a href="grievance-redressal-policy.html" class="hover:text-yellow-400 text-white/80 transition">Grievance Redressal</a></li>
+            </ul>
+          </div>
+          <div class="text-xs text-white/70">
+            <p class="font-semibold text-white">UniToko Ai Tech Private Limited</p>
+            <p>83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048</p>
+            <br>
+            <div class="text-xs text-white/70">
+              <p class="font-semibold text-white mb-1">Support</p>
+              <p>Email: <a href="mailto:support@unitoko.com" class="underline">support@unitoko.com</a></p>
+              <p>Phone: <a href="tel:+91-0000000000" class="underline">+91-9630719393</a></p>
+              <p class="mt-2 font-semibold text-white mb-1">Grievance Officer</p>
+              <p>Email: <a href="mailto:grievance@unitoko.com" class="underline">grievance@unitoko.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 text-center text-xs text-white/60 border-t border-white/10">
+        <p>© <span id="year"></span> UniToko Internet Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+     <!-- RIYA AI ASSISTANT & CHAT BOX -->
+    <div x-data="{ chatOpen: false, tooltipVisible: false }">
+        <!-- Riya Avatar -->
+        <div 
+            id="riya-assistant" 
+            class="assistant-avatar"
+            @click="chatOpen = !chatOpen; tooltipVisible = false"
+            @mouseenter="if (!chatOpen) tooltipVisible = true"
+            @mouseleave="tooltipVisible = false"
+        >
+            <img src="images/RiyaChatbot.png" alt="Riya AI Assistant" />
+            <div id="riya-tooltip" class="tooltip" :class="{ 'visible': tooltipVisible }">👋 Hey! I’m Riya from UniToko.</div>
+        </div>
+
+        <!-- Riya Chat Box -->
+        <div id="riya-chatbox" class="chatbox" :class="{ 'visible': chatOpen }">
+            <!-- Chat Header -->
+            <div class="flex items-center justify-between p-4 bg-primary text-white flex-shrink-0">
+                <div class="flex items-center gap-3">
+                    <img src="images/RiyaChatbot.png" class="w-10 h-10 rounded-full border-2 border-white/50" alt="Riya">
+                    <div>
+                        <p class="font-bold">Riya</p>
+                        <p class="text-xs opacity-80">AI Assistant</p>
+                    </div>
+                </div>
+                <button @click="chatOpen = false" class="p-1 rounded-full hover:bg-white/20 transition-colors" aria-label="Close chat">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+
+            <!-- Messages Area -->
+            <div class="flex-grow p-4 space-y-4 overflow-y-auto">
+                <div class="flex">
+                    <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+                        <p class="text-sm text-gray-800">Hi there! 👋 How can I help you grow your business today?</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+                        <p class="text-sm text-gray-800">You can ask me things like "How do I add a new product?" or "What are the latest trends?".</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-4 bg-white border-t flex-shrink-0">
+                <div class="relative">
+                    <input type="text" placeholder="Ask me anything..." class="w-full py-2 pl-4 pr-12 rounded-full border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary">
+                    <button class="absolute right-1 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary text-white hover:bg-opacity-90">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

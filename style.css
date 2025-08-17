@@ -1,0 +1,129 @@
+
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        /* NEW Color Theme */
+        .bg-primary { background-color: #250a52; }
+        .text-primary { color: #250a52; }
+        .border-primary { border-color: #250a52; }
+        .bg-accent { background-color: #f0c104; }
+        .text-accent { color: #f0c104; }
+        
+        .section-padding { padding: 6rem 1.5rem; }
+        @media (max-width: 768px) { .section-padding { padding: 4rem 1.5rem; } }
+
+        /* Styles for Riya AI Assistant */
+        .assistant-avatar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .assistant-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .assistant-avatar:hover img {
+            transform: scale(1.05);
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transform: scale(0.8) translateY(10px);
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .tooltip.visible {
+            opacity: 1;
+            transform: scale(1) translateY(-10px);
+            pointer-events: auto;
+        }
+
+        /* Styles for Chat Box */
+        .chatbox {
+            position: fixed;
+            bottom: 110px;
+            right: 20px;
+            width: 350px;
+            max-width: 90vw;
+            height: 500px;
+            max-height: 70vh;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 999;
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .chatbox.visible {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            pointer-events: auto;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+
+
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .plus-icon {
+            display: none;
+        }
+        details:not([open]) summary .minus-icon {
+            display: none;
+        }
+
+         .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; }
+        .prose p { font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.25rem; }
+        .prose ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.25rem; }
+        .prose li { margin-bottom: 0.5rem; }
+
+
+
+   body { font-family: 'Inter', sans-serif; }
+    .card {
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+      border: 1px solid rgba(241,245,249,1); /* slate-100 */
+    }
+    .kbd {
+      display:inline-flex; align-items:center; padding:2px 6px; font-size:.8rem;
+      border:1px solid #d1d5db; border-radius:.375rem; background:#f9fafb; color:#374151;
+    }
+    .toc-link { color:#374151; font-weight:600; text-decoration:none; }
+    .toc-link:hover { color:#250a52; }
+
+
+
+
+

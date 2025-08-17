@@ -1,0 +1,504 @@
+
+<!--Shipping & Delivery Policy-->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping & Delivery Policy - UniToko</title>
+  <meta name="description" content="UniToko Shipping & Delivery Policy: coverage, dispatch, timelines, fees, tracking, delivery attempts, RTO, COD, restricted items, force majeure, and contacts." />
+  <link rel="canonical" href="https://www.unitoko.com/shipping-delivery" />
+
+  <!-- Tailwind & Alpine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <!-- Fonts + Site CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#250a52" />
+
+  <!-- Social -->
+  <meta property="og:title" content="Shipping & Delivery Policy • UniToko" />
+  <meta property="og:description" content="How shipping, delivery, and charges work for orders placed on UniToko." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.unitoko.com/shipping-delivery" />
+  <meta property="og:site_name" content="UniToko" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "UniToko Shipping & Delivery Policy",
+    "url": "https://www.unitoko.com/shipping-delivery",
+    "datePublished": "2025-08-09",
+    "dateModified": "2025-08-09",
+    "publisher": {
+      "@type": "Organization",
+      "name": "UniToko Ai Tech Private Limited ",
+      "url": "https://www.unitoko.com",
+      "logo": { "@type": "ImageObject", "url": "https://www.unitoko.com/static/logo.png" }
+    }
+  }
+  </script>
+</head>
+<body x-data="{ mobileMenuOpen: false, searchOpen: false }" class="bg-white text-gray-900">
+
+  <!-- Skip link -->
+  <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:shadow">Skip to content</a>
+
+  <!-- Announcement Bar -->
+    <!-- Announcement Bar -->
+    <div x-data="{ hidden: false, dismiss() { this.hidden = true; } }" x-show="!hidden" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0 transform -translate-y-full" class="relative isolate w-full text-sm text-white bg-gradient-to-r from-[#250a52] via-[#3e1c7a] to-[#250a52] px-4 sm:px-6 py-2.5 flex items-center justify-center gap-3" role="status" aria-live="polite">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-90 flex-shrink-0"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+        <div class="text-center">
+            <span class="font-semibold">Pre-Launch Offer:</span> Get 2 Years of UniToko Premium for FREE!
+            <a href="pre-registration.html" class="ml-3 inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold backdrop-blur hover:bg-white/20">Pre-Register Now</a>
+        </div>
+        <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-white/10" aria-label="Dismiss announcement" @click="dismiss">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ searchOpen: false }" @keydown.escape.window="searchOpen = false" class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="/21.png" alt="UniToko Logo" class="h-8 w-auto">
+                <span class="text-2xl font-bold text-gray-800">UniToko</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                <a href="Article.html" class="text-gray-600 hover:text-primary transition-colors">Article</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                 
+                <!-- NEW "Write Article" BUTTON -->
+               
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all flex-shrink-0">Pre-Register Now</a>
+            </div>
+            <div class="md:hidden flex items-center space-x-4">
+                 <button @click="searchOpen = true" class="text-gray-600 hover:text-primary transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white shadow-lg" x-transition>
+        <nav class="flex flex-col items-center space-y-4 py-4">
+            <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
+            <a href="features.html" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+            <a href="faq.html" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+            <a href="Article.html" class="text-primary font-semibold">Article</a>
+            <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            <div class="flex flex-col items-center space-y-4 pt-4 border-t w-full px-6">
+                <!-- NEW "Write Article" BUTTON FOR MOBILE -->
+                <a href="write-article.html" class="text-primary font-semibold w-full text-center py-2">Write Article</a>
+                <a href="pre-registration.html" class="bg-[#f0c104] text-gray-900 px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all w-full text-center">Pre-Register Now</a>
+            </div>
+        </nav>
+    </div>
+    <div x-show="searchOpen" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-start justify-center pt-16" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg" @click.away="searchOpen = false">
+            <input type="search" placeholder="Search for products or stores..." class="w-full p-4 border-0 focus:ring-2 focus:ring-primary rounded-lg text-lg">
+        </div>
+    </div>
+</header>
+
+  <main id="content">
+    <!-- Hero / Title -->
+    <section class="section-padding bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex items-start justify-between flex-wrap gap-6">
+          <div>
+            <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Shipping &amp; Delivery Policy</h1>
+            <p class="mt-3 text-base md:text-lg text-gray-600">
+              Effective: <time datetime="2025-08-09">09 August 2025</time> · Last updated:
+              <time datetime="2025-08-09">09 August 2025</time>
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button class="inline-flex items-center rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+                    onclick="window.print()" title="Print or Save as PDF">
+              <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+              Print / Save PDF
+            </button>
+            <a href="contact.html" class="inline-flex items-center rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white hover:bg-opacity-90">Contact</a>
+          </div>
+        </div>
+
+        <!-- Callouts -->
+        <div class="mt-6 rounded-xl border border-purple-100 bg-white p-5 text-[15px] leading-relaxed shadow-sm">
+          <p><strong>Scope.</strong> This policy explains how shipping, delivery, and related charges work for orders placed on UniToko and fulfilled by independent <strong>Sellers/Stores</strong>. UniToko is a marketplace and logistics <strong>orchestrator</strong>—we coordinate delivery with third-party carriers. We currently use <strong>Delhivery</strong> as a primary partner and may also use other vetted carriers where required. UniToko <strong>is not a carrier</strong>.</p>
+          <div class="mt-4 rounded-lg bg-gray-50 p-4">
+            <p><strong>Who we are.</strong> “UniToko”, “we”, “us”, or “our” means <strong>UniToko Ai Tech Private Limited </strong> operating the UniToko marketplace. See the Terms of Use for our marketplace role and definitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main layout -->
+    <section class="py-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- TOC -->
+        <aside class="lg:col-span-4 xl:col-span-3">
+          <div class="card p-5 lg:sticky lg:top-24">
+            <h2 class="text-base font-semibold text-gray-900">Table of contents</h2>
+            <ol class="mt-3 space-y-2 text-sm">
+              <li><a class="toc-link" href="#coverage">1) Service coverage &amp; eligibility</a></li>
+              <li><a class="toc-link" href="#processing">2) Order processing &amp; dispatch</a></li>
+              <li><a class="toc-link" href="#timelines">3) Delivery timelines</a></li>
+              <li><a class="toc-link" href="#fees">4) Shipping fees &amp; invoicing</a></li>
+              <li><a class="toc-link" href="#tracking">5) Tracking &amp; delivery communication</a></li>
+              <li><a class="toc-link" href="#attempts-pod">6) Delivery attempts, verification &amp; POD</a></li>
+              <li><a class="toc-link" href="#address-holds">7) Address changes &amp; holds</a></li>
+              <li><a class="toc-link" href="#packaging-openbox">8) Packaging, inspection &amp; open-box</a></li>
+              <li><a class="toc-link" href="#loss-damage">9) Loss, damage, or shortage in transit</a></li>
+              <li><a class="toc-link" href="#rto">10) RTO (Return to Origin) &amp; re-delivery</a></li>
+              <li><a class="toc-link" href="#large-bulky">11) Large, bulky, or installation items</a></li>
+              <li><a class="toc-link" href="#cod">12) Cash on Delivery (COD)</a></li>
+              <li><a class="toc-link" href="#restricted">13) Restricted/Prohibited shipments</a></li>
+              <li><a class="toc-link" href="#force-majeure">14) Force majeure &amp; uncontrollable delays</a></li>
+              <li><a class="toc-link" href="#title-risk">15) Title, risk &amp; responsibility</a></li>
+              <li><a class="toc-link" href="#returns-interplay">16) Interplay with returns &amp; refunds</a></li>
+              <li><a class="toc-link" href="#fraud-safety">17) Fraud prevention &amp; safety</a></li>
+              <li><a class="toc-link" href="#changes">18) Changes to this policy</a></li>
+              <li><a class="toc-link" href="#contact">19) Contact</a></li>
+            </ol>
+          </div>
+        </aside>
+
+        <!-- Article -->
+        <article class="lg:col-span-8 xl:col-span-9 lg:border-l lg:border-gray-200 lg:pl-8">
+          <section id="coverage" class="prose">
+            <h2>1) Service coverage &amp; eligibility</h2>
+            <ul>
+              <li><strong>Serviceable areas:</strong> Shipping is available to pincodes serviceable by our partners (primarily <strong>Delhivery</strong>). Availability is shown at checkout based on your pincode.</li>
+              <li><strong>Domestic first:</strong> Unless explicitly stated, shipping is <strong>within India</strong> only. International shipping is not enabled.</li>
+              <li><strong>Regulated items:</strong> Some categories require additional checks or are restricted (see Terms §15). Orders may be declined where shipping is prohibited by law or carrier policy.</li>
+            </ul>
+          </section>
+
+          <section id="processing" class="prose">
+            <h2>2) Order processing &amp; dispatch</h2>
+            <ul>
+              <li><strong>Processing time:</strong> Stores usually dispatch <strong>within 0–2 business days</strong> of order acceptance, unless a longer handling time is shown on the product page (e.g., made-to-order).</li>
+              <li><strong>Cut-off times:</strong> Orders confirmed after the Store’s daily cut-off may be processed the next business day. Weekends and public holidays may affect timelines.</li>
+              <li><strong>Partial shipments:</strong> Items in one order may ship separately depending on stock location or category.</li>
+            </ul>
+          </section>
+
+          <section id="timelines" class="prose">
+            <h2>3) Delivery timelines (indicative, not guaranteed)</h2>
+            <p>Estimated delivery dates shown at checkout consider carrier SLAs, pincode distance, and product type:</p>
+            <ul>
+              <li><strong>Intra-city (same metro/city):</strong> typically <strong>1–2 business days</strong> after dispatch.</li>
+              <li><strong>Zonal/within state:</strong> typically <strong>2–4 business days</strong> after dispatch.</li>
+              <li><strong>Inter-state/Rest of India:</strong> typically <strong>3–7 business days</strong> after dispatch.</li>
+            </ul>
+            <p><em>Note:</em> ETAs are <strong>best-effort estimates</strong>, not guarantees. Weather, festivals, strikes, access restrictions, or carrier network issues may cause delays. We’ll keep tracking updated.</p>
+          </section>
+
+          <section id="fees" class="prose">
+            <h2>4) Shipping fees &amp; invoicing</h2>
+            <ul>
+              <li><strong>Who charges:</strong> Shipping charges (if any) are <strong>collected and invoiced by UniToko</strong> at checkout on behalf of the delivery service arrangement.</li>
+              <li><strong>How calculated:</strong> Fees depend on <strong>pincode zone, weight/volumetric weight, dimensions, item category</strong>, and any surcharges (e.g., remote area). Final charges are shown before you pay.</li>
+              <li><strong>Free shipping / thresholds:</strong> Some Stores or campaigns may offer free shipping above a cart value; eligibility is shown at checkout.</li>
+              <li><strong>GST:</strong> Applicable taxes on shipping (if any) are included on your invoice/receipt.</li>
+            </ul>
+          </section>
+
+          <section id="tracking" class="prose">
+            <h2>5) Tracking &amp; delivery communication</h2>
+            <ul>
+              <li><strong>Tracking link:</strong> A live tracking link is provided in <strong>Orders</strong> and by email/SMS/WhatsApp where enabled.</li>
+              <li><strong>Status updates:</strong> We push key milestones (dispatched, out for delivery, delivered, attempted).</li>
+              <li><strong>Support:</strong> For delivery issues, contact support from <strong>Orders → Help &amp; Support</strong>; we liaise with the carrier and Store.</li>
+            </ul>
+          </section>
+
+          <section id="attempts-pod" class="prose">
+            <h2>6) Delivery attempts, verification &amp; POD</h2>
+            <ul>
+              <li><strong>Attempts:</strong> Carriers generally make <strong>up to two</strong> delivery attempts. If delivery fails, the shipment may be marked <strong>RTO (Return to Origin)</strong>.</li>
+              <li><strong>Verification:</strong> Delivery may require <strong>OTP, signature, photo</strong>, or ID verification for high-value orders. Please keep your phone available on the delivery day.</li>
+              <li><strong>Authorized recipient:</strong> Orders can be received by you or someone at your address upon verification.</li>
+              <li><strong>No unattended drop:</strong> We do <strong>not</strong> authorize leaving packages unattended without your explicit consent via carrier tools (where supported).</li>
+            </ul>
+          </section>
+
+          <section id="address-holds" class="prose">
+            <h2>7) Address changes &amp; holds</h2>
+            <ul>
+              <li><strong>Before dispatch:</strong> You may request an address change via <strong>Orders</strong>; approval depends on Store status and pincode serviceability.</li>
+              <li><strong>After dispatch:</strong> Address changes are typically <strong>not</strong> possible; we may attempt a carrier exception on best effort.</li>
+              <li><strong>Hold at facility:</strong> Not guaranteed; availability depends on carrier options.</li>
+            </ul>
+          </section>
+
+          <section id="packaging-openbox" class="prose">
+            <h2>8) Packaging, inspection &amp; open-box</h2>
+            <ul>
+              <li><strong>Packaging responsibility:</strong> Stores must pack products securely per category standards (electronics, fragile, liquids).</li>
+              <li><strong>Open-box delivery:</strong> In limited locations and categories, carrier may allow open-box checks (visual inspection only). Acceptance is recorded via OTP/signature. Functional testing may require brand guidelines.</li>
+              <li><strong>On delivery:</strong> If the outer package is visibly damaged, you may <strong>refuse delivery</strong> and immediately raise a ticket with photos.</li>
+            </ul>
+          </section>
+
+          <section id="loss-damage" class="prose">
+            <h2>9) Loss, damage, or shortage in transit</h2>
+            <ul>
+              <li><strong>Report timelines:</strong> Report transit damage, tampering, or shortage <strong>within 48 hours</strong> of delivery (24 hours for perishables) via <strong>Orders → Help</strong> with photos/video of the package, shipping label, and item.</li>
+              <li><strong>Investigation:</strong> We coordinate with the carrier and Store. Outcomes may include <strong>replacement or refund</strong> per the <strong>Returns &amp; Refund Policy</strong> and Store policy.</li>
+              <li><strong>Lost shipments:</strong> If a shipment is confirmed lost by the carrier, we will issue a <strong>refund or replacement</strong> where available.</li>
+            </ul>
+          </section>
+
+          <section id="rto" class="prose">
+            <h2>10) RTO (Return to Origin) &amp; re-delivery</h2>
+            <ul>
+              <li><strong>Reasons:</strong> RTO occurs after repeated delivery failures, incorrect address, unreachable phone, or refusal on non-defect grounds.</li>
+              <li><strong>Charges:</strong> Original shipping charges may be <strong>non-refundable</strong> for RTO caused by customer issues. Re-delivery (if offered) may require payment of additional shipping fees.</li>
+              <li><strong>Perishables:</strong> For time-sensitive goods, RTO may not be feasible; orders may be cancelled with applicable deductions as per policy/law.</li>
+            </ul>
+          </section>
+
+          <section id="large-bulky" class="prose">
+            <h2>11) Large, bulky, or installation items</h2>
+            <ul>
+              <li><strong>Appointment delivery:</strong> Large appliances/furniture may require scheduling; carrier will coordinate time windows.</li>
+              <li><strong>Staircase/doorway access:</strong> Please ensure access; additional handling (hoisting, extra labour) is not included unless specified.</li>
+              <li><strong>Installation:</strong> Brand or Store technicians may handle installation/assembly; timelines are separate from courier delivery.</li>
+            </ul>
+          </section>
+
+          <section id="cod" class="prose">
+            <h2>12) Cash on Delivery (COD)</h2>
+            <ul>
+              <li><strong>Availability:</strong> COD may be available for eligible pincodes and categories, subject to limits and verification.</li>
+              <li><strong>Payment at door:</strong> Exact amount may be required; digital collection (UPI) may be offered by the delivery agent.</li>
+              <li><strong>Refunds for COD returns:</strong> Processed to <strong>UPI/bank</strong> as per the Returns &amp; Refund Policy.</li>
+            </ul>
+          </section>
+
+          <section id="restricted" class="prose">
+            <h2>13) Restricted/Prohibited shipments</h2>
+            <p>We do not ship items prohibited by law or carrier policy, including: hazardous materials, explosives, certain chemicals, illegal surveillance devices, counterfeit goods, wildlife products, and other restricted items (see Terms §15). Orders may be cancelled or adjusted to comply with regulations and carrier rules.</p>
+          </section>
+
+          <section id="force-majeure" class="prose">
+            <h2>14) Force majeure &amp; uncontrollable delays</h2>
+            <p>We are not liable for delays caused by events beyond reasonable control (e.g., extreme weather, natural disasters, strikes, network outages, regulatory checks, riots). We will keep you informed and work with carriers to deliver as soon as feasible.</p>
+          </section>
+
+          <section id="title-risk" class="prose">
+            <h2>15) Title, risk &amp; responsibility</h2>
+            <ul>
+              <li><strong>Seller to customer:</strong> Title and risk typically pass to you <strong>on delivery</strong>. Until delivery, shipments are transported under the carrier’s custody and the Store’s/UniToko’s arrangement.</li>
+              <li><strong>Proof of delivery:</strong> Carrier records (OTP/signature/scan/photo) are considered proof of delivery unless you notify us of an issue within a reasonable period.</li>
+            </ul>
+          </section>
+
+          <section id="returns-interplay" class="prose">
+            <h2>16) Interplay with returns &amp; refunds</h2>
+            <ul>
+              <li><strong>Defect/damage/incorrect item:</strong> Pickup/reverse shipping is <strong>free</strong> (see Returns &amp; Refund Policy).</li>
+              <li><strong>Change-of-mind/size exchange:</strong> Reverse shipping fees may apply where the Store policy allows; such fees are shown before you confirm the return.</li>
+            </ul>
+          </section>
+
+          <section id="fraud-safety" class="prose">
+            <h2>17) Fraud prevention &amp; safety</h2>
+            <ul>
+              <li><strong>Verification:</strong> We may flag and verify high-risk orders; shipping may be held until verification is complete.</li>
+              <li><strong>Tamper checks:</strong> Delivery agents may record delivery photos for safety.</li>
+              <li><strong>Customer safety:</strong> Please do not share OTPs other than with the delivery agent at your door; UniToko support will never ask for full card details or passwords.</li>
+            </ul>
+          </section>
+
+          <section id="changes" class="prose">
+            <h2>18) Changes to this policy</h2>
+            <p>We may update this policy from time to time. The <strong>“Last updated”</strong> date reflects the latest version. Material changes will be highlighted in-app/on the website.</p>
+          </section>
+
+          <section id="contact" class="prose">
+            <h2>19) Contact</h2>
+            <p><strong>Support:</strong> <a href="mailto:support@unitoko.com">support@unitoko.com</a><br>
+               <strong>Shipping issues (quote order ID):</strong> via <strong>Orders → Help &amp; Support</strong><br>
+               <strong>Grievance (India):</strong> <a href="mailto:grievance@unitoko.com">grievance@unitoko.com</a></p>
+            <p><em>Note:</em> This policy is designed for practical clarity and compliance with common carrier practices in India. It does not constitute legal advice. Please have counsel review if you sell regulated categories or enable special delivery models (e.g., alcohol, pharma, cold-chain).</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-sm pt-10 pb-6 px-4 sm:px-6 lg:px-12" role="contentinfo">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Column 1 -->
+        <div class="lg:col-span-1">
+          <a href="index.html" class="inline-block mb-3">
+            <img src="images/UtWhiteNameLogo.png" alt="UniToko Logo" class="h-10">
+          </a>
+          <p class="text-white/80 leading-snug max-w-xs">Empowering India’s retail with identity, discovery, and delivery.</p>
+          <div class="mt-4">
+            <a href="pre-registration.html" class="inline-block px-4 py-2 rounded-md bg-[#f0c104] text-gray-900 font-semibold hover:bg-yellow-400 transition">
+              Pre-Register Now
+            </a>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="text-white/80 text-xs">Coming soon on</span>
+              <img src="images/icons8-google-play-48.png" alt="Google Play" class="h-7">
+              <img src="images/icons8-App-Store-48.png" alt="App Store" class="h-7">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.581-.666 2.477 0 1.645.836 3.099 2.108 3.951-.76-.025-1.474-.234-2.102-.578v.062c0 2.298 1.634 4.214 3.793 4.649-.396.108-.816.166-1.249.166-.303 0-.596-.03-.885-.083.606 1.885 2.364 3.264 4.448 3.303-1.621 1.274-3.666 2.031-5.891 2.031-.383 0-.76-.022-1.131-.066 2.099 1.353 4.599 2.143 7.29 2.143 8.748 0 13.529-7.249 13.529-13.529 0-.206-.005-.412-.013-.617.928-.67 1.729-1.503 2.364-2.45z"/></svg>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-4.481 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="lg:col-span-1 grid grid-cols-2 gap-1">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Explore</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+              <li><a href="about.html" class="hover:text-yellow-400 text-white/80 transition">About</a></li>
+              <li><a href="features.html" class="hover:text-yellow-400 text-white/80 transition">Features</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact</a></li>
+              <li><a href="Article.html" class="hover:text-yellow-400 text-white/80 transition">Article</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Support</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+               
+              <li><a href="pre-registration.html" class="hover:text-yellow-400 text-white/80 transition">Pre-registration</a></li>
+              <li><a href="contact.html" class="hover:text-yellow-400 text-white/80 transition">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="lg:col-span-1 grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80">Legal</h4>
+            <ul class="mt-3 flex flex-col gap-2">
+              <li><a href="terms-and-conditions.html" class="hover:text-yellow-400 text-white/80 transition">Terms &amp; Conditions</a></li>
+              <li><a href="privacy-policy.html" class="hover:text-yellow-400 text-white/80 transition">Privacy Policy</a></li>
+              <li><a href="returns-and-refund-policy.html" class="hover:text-yellow-400 text-white/80 transition">Refund Policy &amp; Return</a></li>
+              <li><a href="shipping-and-delivery-policy.html" class="hover:text-yellow-400 text-white/80 transition">Shipping &amp; Delivery Policy</a></li>
+              <li><a href="grievance-redressal-policy.html" class="hover:text-yellow-400 text-white/80 transition">Grievance Redressal</a></li>
+            </ul>
+          </div>
+          <div class="text-xs text-white/70">
+            <p class="font-semibold text-white">UniToko Ai Tech Private Limited</p>
+            <p>83, DDA Flats, Masjid Moth Phase-2 ,New Delhi-110048</p>
+            <br>
+            <div class="text-xs text-white/70">
+              <p class="font-semibold text-white mb-1">Support</p>
+              <p>Email: <a href="mailto:support@unitoko.com" class="underline">support@unitoko.com</a></p>
+              <p>Phone: <a href="tel:+91-0000000000" class="underline">+91-9630719393</a></p>
+              <p class="mt-2 font-semibold text-white mb-1">Grievance Officer</p>
+              <p>Email: <a href="mailto:grievance@unitoko.com" class="underline">grievance@unitoko.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 pt-4 text-center text-xs text-white/60 border-t border-white/10">
+        <p>© <span id="year"></span> UniToko Internet Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RIYA AI ASSISTANT & CHAT BOX -->
+  <div x-data="{ chatOpen: false, tooltipVisible: false }">
+    <!-- Riya Avatar -->
+    <div id="riya-assistant" class="assistant-avatar"
+         @click="chatOpen = !chatOpen; tooltipVisible = false"
+         @mouseenter="if (!chatOpen) tooltipVisible = true"
+         @mouseleave="tooltipVisible = false">
+      <img src="images/RiyaChatbot.png" alt="Riya AI Assistant" />
+      <div id="riya-tooltip" class="tooltip" :class="{ 'visible': tooltipVisible }">👋 Hey! I’m Riya from UniToko.</div>
+    </div>
+
+    <!-- Riya Chat Box -->
+    <div id="riya-chatbox" class="chatbox" :class="{ 'visible': chatOpen }">
+      <!-- Chat Header -->
+      <div class="flex items-center justify-between p-4 bg-primary text-white flex-shrink-0">
+        <div class="flex items-center gap-3">
+          <img src="images/RiyaChatbot.png" class="w-10 h-10 rounded-full border-2 border-white/50" alt="Riya">
+          <div>
+            <p class="font-bold">Riya</p>
+            <p class="text-xs opacity-80">AI Assistant</p>
+          </div>
+        </div>
+        <button @click="chatOpen = false" class="p-1 rounded-full hover:bg-white/20 transition-colors" aria-label="Close chat">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+
+      <!-- Messages Area -->
+      <div class="flex-grow p-4 space-y-4 overflow-y-auto">
+        <div class="flex">
+          <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+            <p class="text-sm text-gray-800">Hi there! 👋 How can I help you grow your business today?</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+            <p class="text-sm text-gray-800">You can ask me things like "How do I add a new product?" or "What are the latest trends?".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="p-4 bg-white border-t flex-shrink-0">
+        <div class="relative">
+          <input type="text" placeholder="Ask me anything..." class="w-full py-2 pl-4 pr-12 rounded-full border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary">
+          <button class="absolute right-1 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary text-white hover:bg-opacity-90" aria-label="Send">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
